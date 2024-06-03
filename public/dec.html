@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic_Calender</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: black;
+            color:#f0f0f0;
+        }
+        header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .video-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .video-slide2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .mon {
+            display: grid;
+            width: 100%;
+            max-width: 1200px;
+            gap: 10px;
+            justify-content: center;
+        }
+        .day {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color :black;
+        }
+        .day span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
+
+        /* Default layout for larger screens */
+        .mon {
+            grid-template-columns: repeat(7, 1fr); 
+        }
+
+        /* Adjust layout for smaller screens */
+        @media (max-width: 1024px) {
+            .mon {
+                grid-template-columns: repeat(5, 1fr); 
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mon {
+                grid-template-columns: repeat(4, 1fr); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mon {
+                grid-template-columns: repeat(3, 1fr); 
+            }
+        }
+
+        @media (max-width: 320px) {
+            .mon {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header><h1>December </h1></header>
+    <div class="mon">
+        <video class="video-slide active" src="./fly.mp4" autoplay muted loop></video>
+        <video class="video-slide2" src="./fly.mp4" autoplay muted loop></video>
+        <div class="day"><span>1</span></div>
+        <div class="day"><span>2</span></div>
+        <div class="day"><span>3</span></div>
+        <div class="day"><span>4</span></div>
+        <div class="day"><span>5</span></div>
+        <div class="day"><span>6</span></div>
+        <div class="day"><span>7</span></div>
+        <div class="day"><span>8</span></div>
+        <div class="day"><span>9</span></div>
+        <div class="day"><span>10</span></div>
+        <div class="day"><span>11</span></div>
+        <div class="day"><span>12</span></div>
+        <div class="day"><span>13</span></div>
+        <div class="day"><span>14</span></div>
+        <div class="day"><span>15</span></div>
+        <div class="day"><span>16</span></div>
+        <div class="day"><span>17</span></div>
+        <div class="day"><span>18</span></div>
+        <div class="day"><span>19</span></div>
+        <div class="day"><span>20</span></div>
+        <div class="day"><span>21</span></div>
+        <div class="day"><span>22</span></div>
+        <div class="day"><span>23</span></div>
+        <div class="day"><span>24</span></div>
+        <div class="day"><span>25</span></div>
+        <div class="day"><span>26</span></div>
+        <div class="day"><span>27</span></div>
+        <div class="day"><span>28</span></div>
+        <div class="day"><span>29</span></div>
+        <div class="day"><span>30</span></div>
+        <div class="day"><span>31</span></div>
+    </div>
+</body>
+</html>

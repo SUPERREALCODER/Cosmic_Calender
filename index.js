@@ -11,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
+app.get("/december",(req,res) => {
+  res.sendFile(__dirname + "/public/dec.html");
+})
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
