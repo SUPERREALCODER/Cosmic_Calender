@@ -7,7 +7,6 @@ Cosmic Calendar is an interactive web application that condenses the history of 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
 
