@@ -1,7 +1,3 @@
-Certainly! Here's a sample README for your project:
-
----
-
 # Cosmic Calendar
 
 Cosmic Calendar is an interactive web application that condenses the history of the universe into a single year calendar. It provides a fascinating way to visualize major events from the Big Bang to the present day, showing just how recent human history is in the grand scheme of things.
