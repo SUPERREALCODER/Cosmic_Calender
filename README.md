@@ -39,7 +39,7 @@ Cosmic Calendar is an interactive web application that condenses the history of 
 
 3. Start the application:
    ```bash
-   node app.js
+   node index.js
    ```
 
 4. Open your web browser and navigate to `http://localhost:3000`.
