@@ -49,7 +49,7 @@ Cosmic Calendar is an interactive web application that condenses the history of 
 - Navigate through the calendar to explore the history of the universe.
 - Use the interactive tutorial to understand how to use the application and explore various features.
 
-## Screenshots
+
 
 ### Overview of the Cosmic Calendar
 ![Screenshot 2024-06-04 140345](https://github.com/SUPERREALCODER/Cosmic_Calender/assets/121720800/49913da3-0056-4924-ae5c-eb920987934f)
