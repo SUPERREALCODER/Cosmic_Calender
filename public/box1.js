@@ -13,7 +13,7 @@ let tour = new Shepherd.Tour({
     // Add steps for each month
     tour.addStep({
       id: 'january',
-      text: 'January: The universe begins with the Big Bang. All matter and energy in the universe are created, initiating the expansion of the cosmos.',
+      text: ' The universe begins with the Big Bang. All matter and energy in the universe are created, initiating the expansion of the cosmos.On January 10 the first star burst into light .And on Jan 15 the stars  coalesced to form the first small galaxies.',
       attachTo: {
         element: '.calendar-box:nth-child(1)',
         on: 'bottom'
@@ -28,7 +28,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'february',
-      text: 'February: The first stars begin to form from clouds of hydrogen and helium, lighting up the universe.',
+      text: ' The first stars begin to form from clouds of hydrogen and helium, lighting up the universe.',
       attachTo: {
         element: '.calendar-box:nth-child(2)',
         on: 'bottom'
@@ -43,7 +43,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'march',
-      text: 'March: The first galaxies start to take shape, as stars cluster together under the force of gravity.',
+      text: 'Milky Way formed .We formed about 11 billion years ago, on March 15 of the cosmic year',
       attachTo: {
         element: '.calendar-box:nth-child(3)',
         on: 'bottom'
@@ -58,7 +58,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'april',
-      text: 'April: Galaxies begin to cluster into groups, which eventually form vast superclusters.',
+      text: 'Galaxies begin to cluster into groups .',
       attachTo: {
         element: '.calendar-box:nth-child(4)',
         on: 'bottom'
@@ -73,7 +73,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'may',
-      text: 'May: Our own galaxy, the Milky Way, begins to form.',
+      text: 'Galaxies begin to cluster together to form galaxy clusters and superclusters .',
       attachTo: {
         element: '.calendar-box:nth-child(5)',
         on: 'bottom'
@@ -88,7 +88,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'june',
-      text: 'June: The Milky Way develops its spiral arms and structure, continuing to evolve.',
+      text: 'The Milky Way develops its spiral arms and structure, continuing to evolve.',
       attachTo: {
         element: '.calendar-box:nth-child(6)',
         on: 'bottom'
@@ -103,7 +103,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'july',
-      text: 'July: The first stars within our galaxy begin to form.',
+      text: 'The first stars within our galaxy begin to form.',
       attachTo: {
         element: '.calendar-box:nth-child(7)',
         on: 'bottom'
@@ -118,7 +118,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'august',
-      text: 'August: The region of space where our solar system will form becomes a protoplanetary disk.',
+      text: ' The region of space where our solar system will form becomes a protoplanetary disk.',
       attachTo: {
         element: '.calendar-box:nth-child(8)',
         on: 'bottom'
@@ -133,7 +133,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'september',
-      text: 'September: The solar system forms from a collapsing cloud of gas and dust, with the Sun at its center. Earth forms on September 14, and the earliest forms of life appear on September 25.',
+      text: 'The solar system forms from a collapsing cloud of gas and dust, with the Sun at its center. Earth forms on September 14, and the earliest forms of life appear on September 25.',
       attachTo: {
         element: '.calendar-box:nth-child(9)',
         on: 'bottom'
@@ -148,7 +148,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'october',
-      text: 'October: Simple, single-celled organisms dominate the planet. Photosynthesis begins, producing oxygen and changing Earth’s atmosphere.',
+      text: 'Simple, single-celled organisms dominate the planet. Photosynthesis begins, producing oxygen and changing Earth’s atmosphere.',
       attachTo: {
         element: '.calendar-box:nth-child(10)',
         on: 'bottom'
@@ -163,7 +163,7 @@ let tour = new Shepherd.Tour({
     
     tour.addStep({
       id: 'november',
-      text: 'November: More complex cells with a nucleus appear. Multicellular organisms begin to form.',
+      text: ' More complex cells with a nucleus appear. Multicellular organisms begin to form.',
       attachTo: {
         element: '.calendar-box:nth-child(11)',
         on: 'bottom'

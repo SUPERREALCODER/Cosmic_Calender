@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmic_Calender</title>
+    <title>Cosmic_Calendar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/css/shepherd.css" />
     <style>
         body {
             display: flex;
@@ -13,7 +14,7 @@
             margin: 0;
             padding: 20px;
             background-color: black;
-            color:#f0f0f0;
+            color: #f0f0f0;
         }
         header {
             margin-bottom: 20px;
@@ -28,7 +29,7 @@
             object-fit: cover;
             z-index: -1;
         }
-        .video-slide2{
+        .video-slide2 {
             position: absolute;
             top: 0;
             left: 0;
@@ -48,10 +49,15 @@
             width: 100%;
             padding-top: 100%;
             position: relative;
-            background-color: #f0f0f0;
+            background-color: transparent;
             border: 1px solid #ccc;
             border-radius: 4px;
-            color :black;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            cursor: pointer;
         }
         .day span {
             position: absolute;
@@ -59,75 +65,100 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 18px;
+            color: #f0f0f0;
         }
-
+        .solid-day {
+            background-color: #f0f0f0;
+            color: black;
+        }
+        .solid-day span {
+            color: black;
+        }
+        .day:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
         /* Default layout for larger screens */
         .mon {
-            grid-template-columns: repeat(7, 1fr); 
+            grid-template-columns: repeat(7, 1fr);
         }
-
         /* Adjust layout for smaller screens */
         @media (max-width: 1024px) {
             .mon {
-                grid-template-columns: repeat(5, 1fr); 
+                grid-template-columns: repeat(5, 1fr);
             }
         }
-
         @media (max-width: 768px) {
             .mon {
-                grid-template-columns: repeat(4, 1fr); 
+                grid-template-columns: repeat(4, 1fr);
             }
         }
-
         @media (max-width: 480px) {
             .mon {
-                grid-template-columns: repeat(3, 1fr); 
+                grid-template-columns: repeat(3, 1fr);
             }
         }
-
         @media (max-width: 320px) {
             .mon {
-                grid-template-columns: repeat(2, 1fr); 
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <header><h1>December </h1></header>
+    <header><h1>December</h1></header>
     <div class="mon">
         <video class="video-slide active" src="./fly.mp4" autoplay muted loop></video>
         <video class="video-slide2" src="./fly.mp4" autoplay muted loop></video>
-        <div class="day"><span>1</span></div>
-        <div class="day"><span>2</span></div>
-        <div class="day"><span>3</span></div>
-        <div class="day"><span>4</span></div>
-        <div class="day"><span>5</span></div>
-        <div class="day"><span>6</span></div>
-        <div class="day"><span>7</span></div>
-        <div class="day"><span>8</span></div>
-        <div class="day"><span>9</span></div>
-        <div class="day"><span>10</span></div>
-        <div class="day"><span>11</span></div>
-        <div class="day"><span>12</span></div>
-        <div class="day"><span>13</span></div>
-        <div class="day"><span>14</span></div>
-        <div class="day"><span>15</span></div>
-        <div class="day"><span>16</span></div>
-        <div class="day"><span>17</span></div>
-        <div class="day"><span>18</span></div>
-        <div class="day"><span>19</span></div>
-        <div class="day"><span>20</span></div>
-        <div class="day"><span>21</span></div>
-        <div class="day"><span>22</span></div>
-        <div class="day"><span>23</span></div>
-        <div class="day"><span>24</span></div>
-        <div class="day"><span>25</span></div>
-        <div class="day"><span>26</span></div>
-        <div class="day"><span>27</span></div>
-        <div class="day"><span>28</span></div>
-        <div class="day"><span>29</span></div>
-        <div class="day"><span>30</span></div>
-        <div class="day"><span>31</span></div>
+        <button class="day solid-day" id="dec1"><span>1</span></button>
+        <button class="day"><span>2</span></button>
+        <button class="day"><span>3</span></button>
+        <button class="day"><span>4</span></button>
+        <button class="day solid-day" id="dec5"><span>5</span></button>
+        <button class="day"><span>6</span></button>
+        <button class="day"><span>7</span></button>
+        <button class="day"><span>8</span></button>
+        <button class="day"><span>9</span></button>
+        <button class="day"><span>10</span></button>
+        <button class="day"><span>11</span></button>
+        <button class="day"><span>12</span></button>
+        <button class="day"><span>13</span></button>
+        <button class="day solid-day" id="dec14"><span>14</span></button>
+        <button class="day"><span>15</span></button>
+        <button class="day solid-day" id="dec16"><span>16</span></button>
+        <button class="day solid-day" id="dec17"><span>17</span></button>
+        <button class="day"><span>18</span></button>
+        <button class="day"><span>19</span></button>
+        <button class="day solid-day" id="dec20"><span>20</span></button>
+        <button class="day solid-day" id="dec21"><span>21</span></button>
+        <button class="day solid-day" id="dec22"><span>22</span></button>
+        <button class="day solid-day" id="dec23"><span>23</span></button>
+        <button class="day"><span>24</span></button>
+        <button class="day solid-day" id="dec25"><span>25</span></button>
+        <button class="day solid-day" id="dec26"><span>26</span></button>
+        <button class="day solid-day" id="dec27"><><span>27</span></button>
+        <button class="day solid-day" id="dec28"><><span>28</span></button>
+        <button class="day solid-day" id="dec29"><><span>29</span></button>
+        <button class="day solid-day" id="dec30"><><span>30</span></button>
+        <button class="day solid-day" id="dec31"><><span>31</span></button>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/shepherd.js@10.0.1/dist/js/shepherd.min.js"></script>
+    <script type="module" src="dec.js"></script>
+    <script type="module" src="day1.js"></script>
+    <script type="module" src="day5.js"></script>
+    <script type="module" src="day14.js"></script>
+    <script type="module" src="day16.js"></script>
+    <script type="module" src="day17.js"></script>
+    <script type="module" src="day20.js"></script>
+    <script type="module" src="day21.js"></script>
+    <script type="module" src="day22.js"></script>
+    <script type="module" src="day23.js"></script>
+    <script type="module" src="day25.js"></script>
+    <script type="module" src="day26.js"></script>
+    <script type="module" src="day27.js"></script>
+    <script type="module" src="day28.js"></script>
+    <script type="module" src="day29.js"></script>
+    <script type="module" src="day30.js"></script>
+    <script type="module" src="day31.js"></script>
 </body>
 </html>

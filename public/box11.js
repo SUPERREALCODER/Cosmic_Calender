@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         tour.addStep({
           id: 'november',
-          text: 'November: More complex cells with a nucleus appear. Multicellular organisms begin to form.',
+          text: 'More complex cells with a nucleus appear. Multicellular organisms begin to form.',
           attachTo: {
             element: '.calendar-box:nth-child(11)',
             on: 'bottom'

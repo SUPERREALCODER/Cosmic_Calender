@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         tour.addStep({
           id: 'october',
-          text: 'October: Simple, single-celled organisms dominate the planet. Photosynthesis begins, producing oxygen and changing Earth’s atmosphere.',
+          text: 'Simple, single-celled organisms dominate the planet. Photosynthesis begins, producing oxygen and changing Earth’s atmosphere.',
           attachTo: {
             element: '.calendar-box:nth-child(10)',
             on: 'bottom'
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         tour.addStep({
           id: 'november',
-          text: 'November: More complex cells with a nucleus appear. Multicellular organisms begin to form.',
+          text: 'More complex cells with a nucleus appear. Multicellular organisms begin to form.',
           attachTo: {
             element: '.calendar-box:nth-child(11)',
             on: 'bottom'
