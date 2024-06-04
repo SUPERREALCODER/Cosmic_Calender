@@ -73,8 +73,6 @@ Cosmic Calendar is an interactive web application that condenses the history of 
 - **Shepherd.js** for providing a robust framework for the interactive tour.
 - **Express.js** for the flexible web application framework.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
 
 
 
